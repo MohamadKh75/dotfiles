@@ -1,0 +1,13 @@
+[alias]
+a = add
+s = status
+rb = "!f() { git rebase -i HEAD~\"$1\"; }; f"
+ch = "!f() { git checkout \"$1\"; }; f"
+ca = "!f() { git commit --amend; }; f"
+cna = "!f() { git commit --amend -n; }; f"
+cm = "!f() { git commit -m \"$1\"; }; f"
+cnm = "!f() { git commit -nm \"$1\"; }; f"
+ps = "!f() { git push origin \"$1\"; }; f"
+fps = "!f() { git push origin \"$1\" --force-with-lease; }; f"
+pl = "!f() { git pull origin \"$1\"; }; f"
+fpl = "!f() { git fetch && git reset --hard origin/main; }; f"
